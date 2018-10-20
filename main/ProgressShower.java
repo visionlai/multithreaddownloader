@@ -56,8 +56,8 @@ public class ProgressShower {
      */
     private String showTimeFriendly(long seconds) {
         long m = seconds / 60;
-        if (m < 0) {
-            return seconds + "";
+        if (m == 0) {
+            return seconds + "s";
         } else {
             return m + "m " + seconds % 60 + "s";
         }
